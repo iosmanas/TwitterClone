@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		D59BE19D299D5744003698CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59BE19C299D5744003698CE /* AppDelegate.swift */; };
 		D59BE19F299D5744003698CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59BE19E299D5744003698CE /* SceneDelegate.swift */; };
-		D59BE1A1299D5744003698CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59BE1A0299D5744003698CE /* ViewController.swift */; };
-		D59BE1A4299D5744003698CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59BE1A2299D5744003698CE /* Main.storyboard */; };
+		D59BE1A1299D5744003698CE /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59BE1A0299D5744003698CE /* MainTabBarViewController.swift */; };
 		D59BE1A6299D5746003698CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D59BE1A5299D5746003698CE /* Assets.xcassets */; };
 		D59BE1A9299D5746003698CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59BE1A7299D5746003698CE /* LaunchScreen.storyboard */; };
+		D59BE1B3299D59AF003698CE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59BE1B2299D59AF003698CE /* HomeViewController.swift */; };
+		D59BE1B5299D59D9003698CE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59BE1B4299D59D9003698CE /* SearchViewController.swift */; };
+		D59BE1B7299D59E9003698CE /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59BE1B6299D59E9003698CE /* NotificationsViewController.swift */; };
+		D59BE1B9299D59FA003698CE /* DirectMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59BE1B8299D59FA003698CE /* DirectMessagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D59BE199299D5744003698CE /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59BE19C299D5744003698CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D59BE19E299D5744003698CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D59BE1A0299D5744003698CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D59BE1A3299D5744003698CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D59BE1A0299D5744003698CE /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		D59BE1A5299D5746003698CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D59BE1A8299D5746003698CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D59BE1AA299D5746003698CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D59BE1B2299D59AF003698CE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D59BE1B4299D59D9003698CE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D59BE1B6299D59E9003698CE /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		D59BE1B8299D59FA003698CE /* DirectMessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		D59BE19B299D5744003698CE /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				D59BE1B0299D5987003698CE /* Controllers */,
 				D59BE19C299D5744003698CE /* AppDelegate.swift */,
 				D59BE19E299D5744003698CE /* SceneDelegate.swift */,
-				D59BE1A0299D5744003698CE /* ViewController.swift */,
-				D59BE1A2299D5744003698CE /* Main.storyboard */,
 				D59BE1A5299D5746003698CE /* Assets.xcassets */,
 				D59BE1A7299D5746003698CE /* LaunchScreen.storyboard */,
 				D59BE1AA299D5746003698CE /* Info.plist */,
 			);
 			path = TwitterClone;
+			sourceTree = "<group>";
+		};
+		D59BE1B0299D5987003698CE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D59BE1B1299D598E003698CE /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D59BE1B1299D598E003698CE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D59BE1A0299D5744003698CE /* MainTabBarViewController.swift */,
+				D59BE1B2299D59AF003698CE /* HomeViewController.swift */,
+				D59BE1B4299D59D9003698CE /* SearchViewController.swift */,
+				D59BE1B6299D59E9003698CE /* NotificationsViewController.swift */,
+				D59BE1B8299D59FA003698CE /* DirectMessagesViewController.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +152,6 @@
 			files = (
 				D59BE1A9299D5746003698CE /* LaunchScreen.storyboard in Resources */,
 				D59BE1A6299D5746003698CE /* Assets.xcassets in Resources */,
-				D59BE1A4299D5744003698CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +162,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D59BE1A1299D5744003698CE /* ViewController.swift in Sources */,
+				D59BE1B5299D59D9003698CE /* SearchViewController.swift in Sources */,
+				D59BE1A1299D5744003698CE /* MainTabBarViewController.swift in Sources */,
 				D59BE19D299D5744003698CE /* AppDelegate.swift in Sources */,
+				D59BE1B7299D59E9003698CE /* NotificationsViewController.swift in Sources */,
 				D59BE19F299D5744003698CE /* SceneDelegate.swift in Sources */,
+				D59BE1B3299D59AF003698CE /* HomeViewController.swift in Sources */,
+				D59BE1B9299D59FA003698CE /* DirectMessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D59BE1A2299D5744003698CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D59BE1A3299D5744003698CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D59BE1A7299D5746003698CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,7 +313,6 @@
 				INFOPLIST_FILE = TwitterClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +339,6 @@
 				INFOPLIST_FILE = TwitterClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
