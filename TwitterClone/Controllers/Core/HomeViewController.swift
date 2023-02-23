@@ -37,8 +37,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         view.addSubview(timelineTableView)
         timelineTableView.delegate = self
         timelineTableView.dataSource = self
@@ -46,13 +44,19 @@ class HomeViewController: UIViewController {
         configureNavigationBar()
     }
     
+    
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
          
         timelineTableView.frame = view.frame
     }
 
-  
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = false
+        
+    }
+    
 
 }
 
